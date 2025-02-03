@@ -18,6 +18,8 @@
     --background-light: #ecf0f1;
     --text-color: #444;
     --text-light: #fff;
+    --box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px;
+    --border: 1px solid #eee
 }
 
 html, body {
@@ -32,9 +34,65 @@ input {
     margin: 1em;
     border-radius: 1em;
     color: #0019;
-/* HEADER */
 }
+
+/* HEADER */
+header {
+    background-color: var(--primary);
+    box-shadow: var(--box-shadow);
+    padding: 1.8rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--text-light)
+}
+
 /* FOOTER */
+footer {
+    background: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8rem;
+    color: var(--text-light);
+
+}
+
 /* CONTAINER */
+.container {
+    display: flex;
+    font-size: xx-large;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
 /* CONTENT */
+.content {
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
 /* TASKS */
+
+.task-container {
+    padding: 1.5rem;
+    background-color: white;
+    border: var(--border);
+    border-radius: 3rem;
+    min-width: 60rem;
+    min-height: 40rem;
+    box-shadow: var(--box-shadow);
+}
+
+.task-container h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
