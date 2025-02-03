@@ -1,4 +1,4 @@
-/*RESET*/
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@
 
 }
 
-/*THEME*/
+/* THEME */
 :root {
     --font-family: 'Open-sans', sans-serif;
     --primary: #8e44ad;
@@ -26,9 +26,15 @@ html, body {
     background-color: var(--background-light);
 }
 
+/* GLOBAL */
 input {
     padding: 1em;
     margin: 1em;
     border-radius: 1em;
     color: #0019;
+/* HEADER */
 }
+/* FOOTER */
+/* CONTAINER */
+/* CONTENT */
+/* TASKS */
