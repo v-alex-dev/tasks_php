@@ -14,9 +14,7 @@
     <title>Tasks</title>
 </head>
 <body class="container">
-<header>
-    <div class="logo">Dyma task</div>
-</header>
+<?php require_once 'includes/header.php' ?>
 <div class="content">
     <div class="task-container">
         <h1>My Tasks</h1>
