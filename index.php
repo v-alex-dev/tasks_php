@@ -13,9 +13,19 @@
     <script defer src="public/js/index.js"></script>
     <title>Tasks</title>
 </head>
-<body>
-<header></header>
-<div class="content"></div>
-<footer></footer>
+<body class="container">
+<header>
+    <div class="logo">Dyma task</div>
+</header>
+<div class="content">
+    <div class="task-container">
+        <h1>My Tasks</h1>
+        <div class="task-form"></div>
+        <div class="task-list"></div>
+    </div>
+</div>
+<footer>
+    <p>2025 © Tous droits resérver</p>
+</footer>
 </body>
 </html>
