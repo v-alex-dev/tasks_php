@@ -10,6 +10,16 @@
     
 }
 
+/*THEME*/
+:root {
+    --font-family: 'Open-sans', sans-serif;
+    --primary: #8e44ad;
+    --dark: #34495e;
+    --background-light: #ecf0f1;
+    --text-color: #444;
+    --text-light: #fff;
+}
+
 body {
     color: black;
 }
