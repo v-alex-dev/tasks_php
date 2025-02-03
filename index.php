@@ -22,8 +22,6 @@
         <div class="task-list"></div>
     </div>
 </div>
-<footer>
-    <p>2025 © Tous droits resérver</p>
-</footer>
+<?php require_once 'includes/footer.php' ?>
 </body>
 </html>
