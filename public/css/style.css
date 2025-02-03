@@ -7,7 +7,7 @@
     text-underline: none;
     color: #0001;
     font-size: 10px;
-    
+
 }
 
 /*THEME*/
@@ -20,9 +20,10 @@
     --text-light: #fff;
 }
 
-body {
+html, body {
     color: black;
     font-family: var(--font-family);
+    background-color: var(--background-light);
 }
 
 input {
