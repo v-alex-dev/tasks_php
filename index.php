@@ -6,6 +6,9 @@
 const ERROR_REQUIRED = "Veuillez renseigner une tâche";
 const ERROR_TOO_SHORT = "Veuillez entrer au moins 5 caractères"
 
+// VARIABLES
+$error = '';
+
 
 ?>
 <!--
