@@ -9,6 +9,10 @@ const ERROR_TOO_SHORT = "Veuillez entrer au moins 5 caractères";
 // VARIABLES
 $error = '';
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    // IF IT DOESN'T WORK USE : isset($_POST['task']) ? $_POST['task'] : '';
+    $task = $_POST['task'] ?? ''; // /!\ '??' EXIST SINCE PHP 7.0 NOT VALID FOR PROJECTS WITH AN EARLIER VERSION
 
 ?>
 <!--
