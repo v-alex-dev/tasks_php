@@ -64,7 +64,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php if ($error): ?>
             <p class="text-danger"><?= $error ?></p>
         <?php endif; ?>
-        <div class="task-list"></div>
+        <div class="task-list">
+            <?php if ($tasks) : ?>
+                <ul>
+                    <?php foreach ($tasks as $value) : ?>
+                        <li>
+                            <?php
+                            foreach ($value as $key => $item):
+                                if ($key === 'name') :
+                                    echo $item;
+                                endif;
+                            endforeach;
+                            ?>
+                        </li>
+                    <?php endforeach; ?>
+
+                </ul>
+            <?php endif; ?>
+        </div>
     </div>
 </div>
 <?php require_once 'includes/footer.php' ?>
