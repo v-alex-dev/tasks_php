@@ -14,7 +14,7 @@ $tasks = [];
 // CHECK CONTENT INTO TASKS.JSON
 if (file_exists($filename)) {
     $data = file_get_contents($filename);
-    $tasks = json_decode($filename);
+    $tasks = json_decode($data, true) ?? [];
 }
 
 // CHECK REQUEST DETECTION
