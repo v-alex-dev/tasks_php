@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // IF IT DOESN'T WORK USE : isset($_POST['task']) ? $_POST['task'] : '';
     $task = $_POST['task'] ?? ''; // /!\ '??' EXIST SINCE PHP 7.0 NOT VALID FOR PROJECTS WITH AN EARLIER VERSION
 
-    // CHECK IF TASK DOESN'T EXIST SETUP ERROR
+    // IF TASK DOESN'T EXIST SETUP ERROR
     if (!$task) {
         $error = ERROR_REQUIRED;
     } else if (mb_strlen($task) < 5) {
