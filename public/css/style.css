@@ -65,6 +65,12 @@ footer {
     color: var(--text-color);
 }
 
+/* ERRORS */
+.text-danger {
+    color: var(--text-alert);
+    font-weight: 700;
+}
+
 /* BUTTON */
 
 .btn {
