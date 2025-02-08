@@ -116,7 +116,7 @@ footer {
     align-items: center;
 }
 
-.todo-form input {
+.task-form input {
     flex: 1;
     margin-right: 0.5rem;
     border: var(--border);
