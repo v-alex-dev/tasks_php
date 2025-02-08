@@ -11,6 +11,13 @@ $error = '';
 $filename = __DIR__ . "/data/tasks.json";
 $tasks = [];
 
+// CHECK CONTENT INTO TASKS.JSON
+if (file_exists($filename)) {
+    $data = file_get_contents($filename);
+    $tasks = json_decode($filename);
+}
+
+// CHECK REQUEST DETECTION
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     // IF IT DOESN'T WORK USE : isset($_POST['task']) ? $_POST['task'] : '';
