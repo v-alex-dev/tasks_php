@@ -10,7 +10,7 @@
     <div class="task-container">
         <h1>My Tasks</h1>
         <form action="/" method="post" class="task-form">
-            <input type="text">
+            <input name="task" type="text">
             <button class="btn btn-primary" type="submit">Ajouter</button>
         </form>
         <div class="task-list"></div>
