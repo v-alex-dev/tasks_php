@@ -1,3 +1,10 @@
+<?php
+/* LOGICAL CODE  */
+
+?>
+<!--
+=== HTML DISPLAY ===
+-->
 <!doctype html>
 <html lang="fr">
 <head>
