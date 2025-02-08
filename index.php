@@ -29,6 +29,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else if (mb_strlen($task) < 5) {
         $error = ERROR_TOO_SHORT;
     }
+
+    // IF TASK EXIST ADD TASK
+
+    if (!$error) {
+        $tasks = [...$tasks, [
+            'name' => $task,
+            'done' => false,
+            'id' => time()
+        ]];
+
+        file_put_contents($filename, json_encode($tasks));
+    }
 }
 ?>
 <!--
