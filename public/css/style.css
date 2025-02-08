@@ -17,6 +17,7 @@
     --background-light: #ecf0f1;
     --text-color: #444;
     --text-light: #fff;
+    --text-alert: #c0392b;
     --box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px;
     --border: 1px solid #eee
 }
