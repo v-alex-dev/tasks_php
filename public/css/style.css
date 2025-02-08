@@ -120,6 +120,8 @@ footer {
     flex: 1;
     margin-right: 0.5rem;
     border: var(--border);
-    border-radius: 25%;
-    padding: 10px 15px;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 700;
 }
