@@ -8,6 +8,8 @@ const ERROR_TOO_SHORT = "Veuillez entrer au moins 5 caractères";
 
 // VARIABLES
 $error = '';
+$filename = __DIR__ . "/data/tasks.json";
+$tasks = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
