@@ -64,6 +64,23 @@ footer {
     color: var(--text-color);
 }
 
+/* BUTTON */
+
+.btn {
+    background-color: white;
+    font-weight: 700;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    border: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--text-light)
+}
+
 /* CONTENT */
 .content {
     flex: 1;
