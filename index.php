@@ -9,7 +9,10 @@
 <div class="content">
     <div class="task-container">
         <h1>My Tasks</h1>
-        <div class="task-form"></div>
+        <form action="/" method="post" class="task-form">
+            <input type="text">
+            <button class="btn btn-primary" type="submit"></button>
+        </form>
         <div class="task-list"></div>
     </div>
 </div>
