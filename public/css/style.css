@@ -108,3 +108,18 @@ footer {
     font-size: 1.8rem;
     font-weight: bold;
 }
+
+/* FORM */
+.task-form {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.todo-form input {
+    flex: 1;
+    margin-right: 0.5rem;
+    border: var(--border);
+    border-radius: 25%;
+    padding: 10px 15px;
+}
