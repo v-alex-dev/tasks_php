@@ -40,6 +40,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input name="task" type="text">
             <button class="btn btn-primary" type="submit">Ajouter</button>
         </form>
+        <?php if ($error): ?>
+            <p class="text-danger"><?= $error ?></p>
+        <?php endif; ?>
         <div class="task-list"></div>
     </div>
 </div>
