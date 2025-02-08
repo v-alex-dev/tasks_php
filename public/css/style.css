@@ -27,12 +27,8 @@ html, body {
     background-color: var(--background-light);
 }
 
-/* GLOBAL */
-input {
-    padding: 1em;
-    margin: 1em;
-    border-radius: 1em;
-    color: #0019;
+h1 {
+    margin-bottom: 1rem;
 }
 
 /* HEADER */
