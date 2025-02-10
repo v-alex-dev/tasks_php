@@ -75,12 +75,14 @@ footer {
 
 .btn {
     background-color: white;
-    font-weight: 700;
+    font-weight: bold;
     color: var(--text-color);
     font-size: 1.6rem;
     border: 0;
     padding: 10px 15px;
     cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
 }
 
 .btn-primary {
