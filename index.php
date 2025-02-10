@@ -10,6 +10,7 @@ const ERROR_TOO_SHORT = "Veuillez entrer au moins 5 caractères";
 $error = '';
 $filename = __DIR__ . "/data/tasks.json";
 $tasks = [];
+$task = '';
 
 // CHECK CONTENT INTO TASKS.JSON
 if (file_exists($filename)) {
@@ -58,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="task-container">
         <h1>My Tasks</h1>
         <form action="/" method="post" class="task-form">
-            <input name="task" type="text">
+            <input value="<?= $task ?>" name="task" type="text">
             <button class="btn btn-primary" type="submit">Ajouter</button>
         </form>
         <?php if ($error): ?>
