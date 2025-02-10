@@ -90,6 +90,11 @@ footer {
     color: var(--text-light)
 }
 
+.btn-danger {
+    background-color: var(--text-alert);
+    color: var(--text-light);
+}
+
 /* CONTENT */
 .content {
     flex: 1;
