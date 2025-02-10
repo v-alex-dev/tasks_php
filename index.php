@@ -69,12 +69,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?php if ($tasks) : ?>
                 <ul class="task-list">
                     <?php foreach ($tasks as $value) : ?>
-                        <li class="task-item">
+                        <li class="task-item ">
 
-                            <span>
+                            <span class=" <?= $value['done'] ? 'low-opacity' : '' ?> ">
                                 <?= $value['name'] ?>
                             </span>
-                            <button class="btn btn-primary" type="button">Done</button>
+                            <a href="/edit_task.php?id=<?= $value['id'] ?>">
+                                <button class="btn btn-primary"
+                                        type="button"><?= $value['done'] ? 'To do' : 'Done' ?></button>
+                            </a>
                             <button class="btn btn-danger" type="button">Delete</button>
                         </li>
                     <?php endforeach; ?>
