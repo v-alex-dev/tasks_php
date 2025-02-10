@@ -162,3 +162,7 @@ footer {
     border-radius: 1rem;
     align-items: center;
 }
+
+.low-opacity {
+    opacity: 20%;
+}
