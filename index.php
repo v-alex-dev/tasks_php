@@ -82,7 +82,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <a href="/delete_task.php?id=<?= $value['id'] ?>">
                                 <button class="btn btn-danger" type="button">Delete</button>
                             </a>
-
                         </li>
                     <?php endforeach; ?>
 
