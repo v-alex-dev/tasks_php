@@ -79,7 +79,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <button class="btn btn-primary"
                                         type="button"><?= $value['done'] ? 'To do' : 'Done' ?></button>
                             </a>
-                            <button class="btn btn-danger" type="button">Delete</button>
+                            <a href="/delete_task.php?id=<?= $value['id'] ?>">
+                                <button class="btn btn-danger" type="button">Delete</button>
+                            </a>
+
                         </li>
                     <?php endforeach; ?>
 
