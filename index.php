@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ]];
 
         file_put_contents($filename, json_encode($tasks));
+        header('Location : /');
     }
 }
 ?>
